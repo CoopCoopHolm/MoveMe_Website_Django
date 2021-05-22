@@ -1,0 +1,60 @@
+* {
+    margin: 0px auto;
+    width: 970px;
+    
+}
+
+#wrapper{
+    border: 1px solid #ddd;
+    box-shadow: gray 2px 2px 3px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    
+}
+
+h1 {
+    margin: 10px 0px 10px 0px;
+}
+
+button {
+    margin-top: 10px; 
+    width: 125px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #ddd;
+    box-shadow: gray 2px 2px 3px;
+}
+
+#post {
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    box-shadow: gray 2px 2px 3px;
+    padding: 20px;
+    width: 930px;
+}
+
+.daily {
+    margin: 10px 0px;
+    border: 1px solid #ddd;
+    box-shadow: gray 2px 2px 3px;
+    padding: 20px;
+    width: 930px;
+}
+
+input {
+    padding: 20px;
+    width: 930px;
+}
+
+.hr {
+    width: 815px;
+}
+
+hr {
+    width: 930px;
+}
