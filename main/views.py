@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'home.html')
+
+def legal(request):
+    return render(request, 'legal.html')
