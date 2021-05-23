@@ -1,7 +1,6 @@
 
  */
 :root {
-  --bs-blue: #B12025;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -3250,11 +3249,8 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #B12025;
   border-color: #B12025;
-<<<<<<< HEAD
   box-shadow: 0 0 0 0.25rem #B12025;
-=======
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
->>>>>>> 6c2101d9cf1b47b67d9ef1b929ce0e42a36c8326
+  box-shadow: 0 0 0 0.25rem #B12025;
 }
 
 .btn-check:checked+.btn-primary,
