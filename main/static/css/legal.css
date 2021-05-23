@@ -15,3 +15,32 @@
     padding: 20px;
     z-index: 9999;
 }
+
+.modal-content {
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+    position: relative;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.close-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    top: -22px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    background-color: #0866ec;
+}
