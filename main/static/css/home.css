@@ -54,7 +54,72 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* Modal for pressing free quote */
+#service-modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
 
+.modal-content {
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.close-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50% !important;
+  position: absolute;
+  top: -22px;
+  background-color: #B12025;
+}
+
+.service-option {
+  color: #fff;
+  background-color: #B12025;
+  border-color: #B12025;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.modal-contact {
+  margin-bottom: 5px;
+}
+/* ------------- */
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -3185,7 +3250,11 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #B12025;
   border-color: #B12025;
+<<<<<<< HEAD
   box-shadow: 0 0 0 0.25rem #B12025;
+=======
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+>>>>>>> 6c2101d9cf1b47b67d9ef1b929ce0e42a36c8326
 }
 
 .btn-check:checked+.btn-primary,
@@ -3541,7 +3610,7 @@ fieldset:disabled .btn {
 
 .btn-check:focus+.btn-outline-primary,
 .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem #B12025;
 }
 
 .btn-check:checked+.btn-outline-primary,
@@ -3559,7 +3628,7 @@ fieldset:disabled .btn {
 .btn-outline-primary:active:focus,
 .btn-outline-primary.active:focus,
 .btn-outline-primary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem #B12025;
 }
 
 .btn-outline-primary:disabled,
