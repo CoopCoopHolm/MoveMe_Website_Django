@@ -12,13 +12,19 @@
     <script src="{% static 'js/legal.js' %}"></script>
 </head>
 <body>
+    <div class="service-modal">
+        <h4>Please select a service</h4>
+        <a href="#">MOVING</a>
+        <a href="#">JUNK REMOVAL</a>
+        <a href="#">CONSIGNMENT</a>
+    </div>
     <h3>Can we collect your information?</h3>
     <p>We're ready to be a part of your move! To do that, we'll need to collect and store your information. This will only be used to coordinate the services you requested with the location you selected. You may request to have this information provided to you or deleted at any time. By checking the box below, you are authorizing Move Me to contact you via email, phone, or text message. You may ask us to not use any of these communication types at any time by calling or leaving a message at (xxx) xxx-xxxx to update your preferences.
     </p>
     <p>If you perfer not to fill out the following form, then please call or leave a message at (xxx) xxx-xxxx</p>
     <input type="checkbox" name="consent" id="consent" onclick="info_consent(this)">
     <label for="consent">Yes, I am fine with my information being stored.</label>
-    <button type="button" id="next_button" disabled>Next</button>
+    <button type="button" id="next_button" onclick="serviceModalDisplay()" disabled>Next</button>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
