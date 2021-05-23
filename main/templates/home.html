@@ -13,25 +13,17 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="{% static 'css/home.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" />
     <script src="{% static 'js/home.js' %}"></script>
 </head>
 
 <body>
     <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container px-5">
             <img src="{% static 'images/MoveMe.jpg' %}" alt="Move Me Logo">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Contact</a></li>
-                    
-            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Contact</a></li>
         </div>
     </nav>
     <!-- Header-->
@@ -41,44 +33,50 @@
                 <div class="col-lg-6">
                     <div class="text-center my-5">
                         <h1 class="display-5 fw-bolder text-white mb-2">Welcome to Move Me!</h1>
-                        <p class="lead text-white-50 mb-4">If you are looking for fast and affordable moving, junk removal, or in need of a consignment, Move Me has you covered!</p>
+                        <p class="lead text-white-50 mb-4">If you are looking for fast and affordable moving, junk
+                            removal, or in need of a consignment, Move Me has you covered!</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#" onclick="serviceModalDisplay()">Free Quote</a>
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#" onclick="serviceModalDisplay()">Free
+                                Quote</a>
                             <div id="service-modal">
                                 <div class="modal-content" tabindex="-1">
-                                    <button class="btn btn-primary close-button" onclick="serviceModalClose()">X</button>
+                                    <button class="btn btn-primary close-button"
+                                        onclick="serviceModalClose()">X</button>
                                     <h4>Ready for your free quote?</h4>
                                     <div>
                                         <p class="modal-contact">Call or text: <a href="#">800.345.1070</a></p>
-                                        <p class="modal-contact">email: <a href= "mailto:abc@example.com">Send Email</a></p>
+                                        <p class="modal-contact">email: <a href="mailto:abc@example.com">Send Email</a>
+                                        </p>
                                         <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/consent">Online form</a>
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <!-- Features section-->
     <section class="py-5 border-bottom" id="features">
         <div class="container px-5 my-5">
             <div class="row gx-5">
                 <div class="col-lg-4 mb-5 mb-lg-0">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                            class="bi bi-box-seam"></i></div>
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-box-seam"></i>
+                    </div>
                     <h2 class="h4 fw-bolder">Moving</h2>
                     <p>Found a new home? Let Move Me take care of your moving worries!</p>
-                    
+
                 </div>
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-trash"></i>
                     </div>
                     <h2 class="h4 fw-bolder">Junk Removal</h2>
-                    <p>Have some stuff that you just don't need? We've got you covered. Move Me offers local pick up and safe disposal of any item you may have.</p>
+                    <p>Have some stuff that you just don't need? We've got you covered. Move Me offers local pick up and
+                        safe disposal of any item you may have.</p>
                 </div>
                 <div class="col-lg-4">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cash-stack"></i>
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                            class="bi bi-cash-stack"></i>
                     </div>
                     <h2 class="h4 fw-bolder">Consignment</h2>
                     <p>Do you have something to sell but don't have the time? Let us sell it for you!</p>
@@ -86,7 +84,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Testimonials section-->
     <section class="py-5 border-bottom">
         <div class="container px-5 my-5 px-5">
@@ -103,7 +101,9 @@
                                 <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
                                 </div>
                                 <div class="ms-4">
-                                    <p class="mb-1">I had to move, and I absolutely hate moving. I called Move Me and I got a really good deal. They were super great and careful with all of my stuff. They even went the extra mile and picked up a fridge off site for me. 
+                                    <p class="mb-1">I had to move, and I absolutely hate moving. I called Move Me and I
+                                        got a really good deal. They were super great and careful with all of my stuff.
+                                        They even went the extra mile and picked up a fridge off site for me.
                                     </p>
                                     <div class="small text-muted">- Cooper Holm, Tulsa</div>
                                 </div>
@@ -117,7 +117,9 @@
                                 <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
                                 </div>
                                 <div class="ms-4">
-                                    <p class="mb-1">I needed a storage unit emptied out with a pretty decent amound of items in it. Loading and unloading was quick and they were very considerate with my items. The price was cheaper than a lot of other quotes I had gotten.</p>
+                                    <p class="mb-1">I needed a storage unit emptied out with a pretty decent amound of
+                                        items in it. Loading and unloading was quick and they were very considerate with
+                                        my items. The price was cheaper than a lot of other quotes I had gotten.</p>
                                     <div class="small text-muted">- Jeg Beevers, Tulsa </div>
                                 </div>
                             </div>
