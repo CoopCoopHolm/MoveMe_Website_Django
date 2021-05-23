@@ -4599,6 +4599,7 @@ fieldset:disabled .btn {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: white;
 }
 
 .navbar>.container,
@@ -4958,7 +4959,7 @@ fieldset:disabled .btn {
 
 .navbar-dark .navbar-nav .show>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #fff;
+  color: #212529;
 }
 
 .navbar-dark .navbar-toggler {
