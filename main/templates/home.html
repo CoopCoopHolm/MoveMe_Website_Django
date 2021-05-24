@@ -17,36 +17,122 @@
 </head>
 
 <body>
-    <!-- Responsive navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container px-5">
-            <img src="{% static 'images/MoveMe.jpg' %}" alt="Move Me Logo">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Contact</a></li>
-        </div>
-    </nav>
-    <!-- Header-->
-    <header class="bg-dark py-5">
-        <div class="container px-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <div class="text-center my-5">
-                        <h1 class="display-5 fw-bolder text-white mb-2">Welcome to Move Me!</h1>
-                        <p class="lead text-white-50 mb-4">If you are looking for fast and affordable moving, junk
-                            removal, or in need of a consignment, Move Me has you covered!</p>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#" onclick="serviceModalDisplay()">Free
-                                Quote</a>
-                            <div id="service-modal">
-                                <div class="modal-content" tabindex="-1">
-                                    <button class="btn btn-primary close-button"
-                                        onclick="serviceModalClose()">X</button>
-                                    <h4>Ready for your free quote?</h4>
-                                    <div>
-                                        <p class="modal-contact">Call or text: <a href="#">800.345.1070</a></p>
-                                        <p class="modal-contact">email: <a href="mailto:abc@example.com">Send Email</a>
+    <div id="wrapper">
+        <!-- Responsive navbar-->
+        <nav class="py-5 navbar navbar-expand-lg navbar-dark">
+            <div class="container px-5">
+                <img src="{% static 'images/MoveMe.jpg' %}" alt="Move Me Logo">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Contact</a></li>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-6">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Welcome to Move Me!</h1>
+                            <p class="lead text-white-50 mb-4">If you are looking for fast and affordable moving, junk
+                                removal, or in need of a consignment, Move Me has you covered!</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#"
+                                    onclick="serviceModalDisplay()">Free
+                                    Quote</a>
+                                <div id="service-modal">
+                                    <div class="modal-content" tabindex="-1">
+                                        <button class="btn btn-primary close-button"
+                                            onclick="serviceModalClose()">X</button>
+                                        <h4>Ready for your free quote?</h4>
+                                        <div>
+                                            <p class="modal-contact">Call or text: <a href="#">800.345.1070</a></p>
+                                            <p class="modal-contact">email: <a href="mailto:abc@example.com">Send
+                                                    Email</a>
+                                            </p>
+                                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/consent">Online
+                                                form</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- Features section-->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 ">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-box-seam"></i>
+                        </div>
+                        <h2 class="h4 fw-bolder">Moving</h2>
+                        <p>Found a new home? Let Move Me take care of your moving worries!</p>
+
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-trash"></i>
+                        </div>
+                        <h2 class="h4 fw-bolder">Junk Removal</h2>
+                        <p>Have some stuff that you just don't need? We've got you covered. Move Me offers local pick up
+                            and
+                            safe disposal of any item you may have.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                class="bi bi-cash-stack"></i>
+                        </div>
+                        <h2 class="h4 fw-bolder">Consignment</h2>
+                        <p>Do you have something to sell but don't have the time? Let us sell it for you!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Customer Reviews</h2>
+                    <p class="lead mb-0">Don't take it from us, here is what the people are saying.</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- Testimonial 1-->
+                        <div class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i
+                                            class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">I had to move, and I absolutely hate moving. I called Move Me
+                                            and I
+                                            got a really good deal. They were super great and careful with all of my
+                                            stuff.
+                                            They even went the extra mile and picked up a fridge off site for me.
                                         </p>
-                                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/consent">Online form</a>
+                                        <div class="small text-muted">- Cooper Holm, Tulsa</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2-->
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i
+                                            class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">I needed a storage unit emptied out with a pretty decent amound
+                                            of
+                                            items in it. Loading and unloading was quick and they were very considerate
+                                            with
+                                            my items. The price was cheaper than a lot of other quotes I had gotten.</p>
+                                        <div class="small text-muted">- Jeg Beevers, Tulsa </div>
                                     </div>
                                 </div>
                             </div>
@@ -54,125 +140,56 @@
                     </div>
                 </div>
             </div>
-    </header>
-    <!-- Features section-->
-    <section class="py-5 border-bottom" id="features">
-        <div class="container px-5 my-5">
-            <div class="row gx-5">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-box-seam"></i>
+        </section>
+        <!-- Contact section-->
+        <section class="bg-light py-5">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
                     </div>
-                    <h2 class="h4 fw-bolder">Moving</h2>
-                    <p>Found a new home? Let Move Me take care of your moving worries!</p>
-
+                    <h2 class="fw-bolder">Get in touch</h2>
+                    <p class="lead mb-0">We'd love to hear from you</p>
                 </div>
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-trash"></i>
-                    </div>
-                    <h2 class="h4 fw-bolder">Junk Removal</h2>
-                    <p>Have some stuff that you just don't need? We've got you covered. Move Me offers local pick up and
-                        safe disposal of any item you may have.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                            class="bi bi-cash-stack"></i>
-                    </div>
-                    <h2 class="h4 fw-bolder">Consignment</h2>
-                    <p>Do you have something to sell but don't have the time? Let us sell it for you!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials section-->
-    <section class="py-5 border-bottom">
-        <div class="container px-5 my-5 px-5">
-            <div class="text-center mb-5">
-                <h2 class="fw-bolder">Customer Reviews</h2>
-                <p class="lead mb-0">Don't take it from us, here is what the people are saying.</p>
-            </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <!-- Testimonial 1-->
-                    <div class="card mb-4">
-                        <div class="card-body p-4">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <p class="mb-1">I had to move, and I absolutely hate moving. I called Move Me and I
-                                        got a really good deal. They were super great and careful with all of my stuff.
-                                        They even went the extra mile and picked up a fridge off site for me.
-                                    </p>
-                                    <div class="small text-muted">- Cooper Holm, Tulsa</div>
-                                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputName" type="text"
+                                    placeholder="Enter your name..." />
+                                <label for="inputName">Full name</label>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Testimonial 2-->
-                    <div class="card">
-                        <div class="card-body p-4">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <p class="mb-1">I needed a storage unit emptied out with a pretty decent amound of
-                                        items in it. Loading and unloading was quick and they were very considerate with
-                                        my items. The price was cheaper than a lot of other quotes I had gotten.</p>
-                                    <div class="small text-muted">- Jeg Beevers, Tulsa </div>
-                                </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputEmail" type="email"
+                                    placeholder="name@example.com" />
+                                <label for="inputEmail">Email address</label>
                             </div>
-                        </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="inputPhone" type="tel" placeholder="(123) 456-7890" />
+                                <label for="inputPhone">Phone number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="inputMessage" type="text"
+                                    placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                                <label for="inputMessage">Message</label>
+                            </div>
+                            <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Contact section-->
-    <section class="bg-light py-5">
-        <div class="container px-5 my-5 px-5">
-            <div class="text-center mb-5">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i>
-                </div>
-                <h2 class="fw-bolder">Get in touch</h2>
-                <p class="lead mb-0">We'd love to hear from you</p>
+        </section>
+        <!-- Footer-->
+        <footer class="py-6 bg-dark">
+            <div class="container px-5">
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
             </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <form>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="inputName" type="text" placeholder="Enter your name..." />
-                            <label for="inputName">Full name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                            <label for="inputEmail">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="inputPhone" type="tel" placeholder="(123) 456-7890" />
-                            <label for="inputPhone">Phone number</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="inputMessage" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                            <label for="inputMessage">Message</label>
-                        </div>
-                        <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container px-5">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </div>
 </body>
 
 </html>
