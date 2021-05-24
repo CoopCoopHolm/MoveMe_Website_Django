@@ -40,7 +40,7 @@
 }
 
 img {
-  width: 135px;
+  width: 250px;
 }
 
 body {
@@ -3250,11 +3250,8 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #B12025;
   border-color: #B12025;
-<<<<<<< HEAD
   box-shadow: 0 0 0 0.25rem #B12025;
-=======
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
->>>>>>> 6c2101d9cf1b47b67d9ef1b929ce0e42a36c8326
 }
 
 .btn-check:checked+.btn-primary,
@@ -4985,6 +4982,13 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+/* contact inforomation */
+.contact-info {
+  margin-bottom: 0;
+  margin-right: 10px;
+  display: block;
+}
+/* ------------------------ */
 .card {
   position: relative;
   display: flex;
