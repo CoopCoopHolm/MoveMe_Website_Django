@@ -5,4 +5,7 @@ urlpatterns = [
 
     path('', views.index),
     path('consent', views.consent),
+    path('moving', views.moving),
+    path('junk_removal', views.junk_removal),
+    path('consignment', views.consignment),
 ]

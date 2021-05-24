@@ -4646,6 +4646,10 @@ fieldset:disabled .btn {
   list-style: none;
 }
 
+.navbar-nav a {
+  margin-left: 3px;
+}
+
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;

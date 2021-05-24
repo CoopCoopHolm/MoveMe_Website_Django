@@ -15,16 +15,22 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class="container px-5 center">
+    <div>
+        <nav class="py-5 navbar navbar-expand-lg navbar-dark">
+            <div class="container px-5">
+                <img src="/static/images/MoveMe.jpg" alt="Move Me Logo">
+                <a class="navbar-nav ms-auto mb-2 mb-lg-0" href="/">Home</a>
+            </div>
+        </nav>
+        <div class="py-5">
             <div id="service-modal">
                 <div class="modal-content" tabindex="-1">
                     <button class="btn btn-primary close-button" onclick="serviceModalClose()">X</button>
                     <h4>Please select a service</h4>
-                    <div>
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Moving</a>
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Junk Removal</a>
-                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Consignment</a>
+                    <div class="form-links">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/moving">Moving</a>
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/junk_removal">Junk Removal</a>
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/consignment">Consignment</a>
                     </div>
                 </div>
             </div>
@@ -48,6 +54,11 @@
             <button type="button" id="next_button" onclick="serviceModalDisplay()" disabled
                 class="btn btn-primary">Next</button>
         </div>
+        <footer class="py-6 bg-dark">
+            <div class="container px-5">
+                <p class="m-0 text-center text-white">Copyright © Your Website 2021</p>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
