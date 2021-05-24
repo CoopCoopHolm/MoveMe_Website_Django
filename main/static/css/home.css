@@ -3264,7 +3264,6 @@ fieldset:disabled .btn {
   background-color: #B12025;
   border-color: #B12025;
   box-shadow: 0 0 0 0.25rem #B12025;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
   box-shadow: 0 0 0 0.25rem #B12025;
 }
 
@@ -4996,13 +4995,6 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
-/* contact inforomation */
-.contact-info {
-  margin-bottom: 0;
-  margin-right: 10px;
-  display: block;
-}
-/* ------------------------ */
 .card {
   position: relative;
   display: flex;
