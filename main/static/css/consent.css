@@ -1,19 +1,16 @@
-#wrapper{
-    border: 1px solid #ddd;
-    box-shadow: gray 2px 2px 3px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #FFFFFF;
-}
 
 body {
     background-color: rgb(238, 238, 238);
-    
 }
 
-.center {
-    padding: 40px;
+.form-links {
+    display: contents;
 }
+
+.form-links a {
+    margin-top: 5px;
+}
+
 #service-modal{
     position: fixed;
     top: 0;

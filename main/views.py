@@ -7,3 +7,12 @@ def index(request):
 
 def consent(request):
     return render(request, 'consent.html')
+
+def moving(request):
+    return render(request, 'moving.html')
+
+def junk_removal(request):
+    return render(request, 'junk_removal.html')
+
+def consignment(request):
+    return render(request, 'consignment.html')

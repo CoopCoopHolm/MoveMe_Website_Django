@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/moving.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/.js' %}"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="py-5 navbar navbar-expand-lg navbar-dark">
+            <div class="container px-5">
+                <img src="/static/images/MoveMe.jpg" alt="Move Me Logo">
+                <a class="navbar-nav ms-auto mb-2 mb-lg-0" href="/">Home</a>
+            </div>
+        </nav>
+        <div class="py-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputName" type="text" placeholder="Enter your name...">
+                            <label for="inputName">Full name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com">
+                            <label for="inputEmail">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputPhone" type="tel" placeholder="(123) 456-7890">
+                            <label for="inputPhone">Phone number</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputCurrentAddress" type="text" placeholder="Street, City, ST, 12345">
+                            <label for="inputCurrentAddress">Current Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputMovingAddress" type="text" placeholder="Street, City, ST, 12345">
+                            <label for="inputMovingAddress">Moving Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="inputMoveDate" type="datetime-local">
+                            <label for="inputMoveDate">Perferred moving date and time</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="inputMessage" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                            <label for="inputMessage">Details of the move we need to know</label>
+                        </div>
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="py-6 bg-dark">
+            <div class="container px-5">
+                <p class="m-0 text-center text-white">Copyright © Your Website 2021</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+</html>
