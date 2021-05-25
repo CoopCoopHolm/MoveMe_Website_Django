@@ -39,7 +39,8 @@
                             <label for="inputPhone">Phone number</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="inputCurrentAddress" type="text" placeholder="Street, City, ST, 12345">
+                            <input class="form-control" id="inputCurrentAddress" type="text"
+                                placeholder="Street, City, ST, 12345">
                             <label for="inputCurrentAddress">Item address</label>
                         </div>
                         <div class="form-floating mb-3">
@@ -47,11 +48,29 @@
                             <label for="inputMoveDate">Perferred date and time of pick-up</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="inputMessage" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
+                            <textarea class="form-control" id="inputMessage" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"></textarea>
                             <label for="inputMessage">Details of your item</label>
+                        </div>
+
+
+
+                        <div class="form-floating mb-3 ">
+                            <form method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button type="submit">Upload</button>
+                            </form>
+
+                            {% if img_obj %}
+                            <h3>Succesfully uploaded : {{img_obj.title}}</h3>
+                            <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px">
+                            {% endif %}
                         </div>
                         <div class="d-grid"><button class="btn btn-primary btn-lg" type="submit">Submit</button>
                         </div>
+
+
                     </form>
                 </div>
             </div>
