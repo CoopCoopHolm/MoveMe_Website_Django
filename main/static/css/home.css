@@ -37,7 +37,8 @@
 }
 
 img {
-  width: 250px;
+  width: 33%;
+  min-width: 133px;
 }
 
 body {
