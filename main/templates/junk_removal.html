@@ -32,7 +32,7 @@
                         {% endfor %}
                     </ul>
                     {% endif %}
-                    <form action="/quote/junk_removal" method="POST">
+                    <form action="/quote/junk_removal" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         <div class="form-floating mb-3">
                             <input class="form-control" id="inputName" type="text" name="inputName" placeholder="Enter your name...">

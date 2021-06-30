@@ -40,7 +40,7 @@ def quoteMoving(request):
             currentAddress=request.POST['inputCurrentAddress'],
             movingAddress=request.POST['inputMovingAddress'],
             moveDateTime=request.POST['inputMoveDate'],
-            itemImages=request.POST['inputImages'],
+            itemImages=request.FILES['inputImages'],
             message=request.POST['inputMessage'],
         )
         return redirect(f'/moving/review/{moving_quote.id}')
@@ -60,7 +60,7 @@ def quoteJunk_removal(request):
             phone=request.POST['inputPhone'],
             itemAddress=request.POST['inputItemAddress'],
             moveDateTime=request.POST['inputMoveDate'],
-            itemImages=request.POST['inputImages'],
+            itemImages=request.FILES['inputImages'],
             message=request.POST['inputMessage'],
         )
         return redirect(f'/junk_removal/review/{junk_removal_quote.id}')
@@ -80,7 +80,7 @@ def quoteConsignment(request):
             phone=request.POST['inputPhone'],
             itemAddress=request.POST['inputItemAddress'],
             moveDateTime=request.POST['inputMoveDate'],
-            itemImages=request.POST['inputImages'],
+            itemImages=request.FILES['inputImages'],
             message=request.POST['inputMessage'],
         )
         return redirect(f'/consignment/review/{consignment_quote.id}')
